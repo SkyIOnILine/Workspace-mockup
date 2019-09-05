@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Lora';
+  color: #505962;
+  background-color: white;
+}
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+.navbar {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.navbar-brand {
+  height: auto;
+  font-size: 0.9rem;
+  padding: 0.7rem 0 0.7rem 3rem;
+  color: #89553b;
+  text-align: center;
+}
+.navbar-nav li {
+  padding-left: 0.7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
