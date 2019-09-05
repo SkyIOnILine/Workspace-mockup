@@ -40,3 +40,184 @@ body {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #1ebba3;
 }
+.home-inner {
+  background-image: url(../img/building.jpg);
+}
+.caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 60%;
+  left: 27%;
+  z-index: inherit 1;
+  color: white;
+  text-transform: uppercase;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  padding-bottom: 1.6rem;
+}
+#team .jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+  background-color: white;
+}
+#team h2.heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+#team p.heading {
+  font-size: 1.1rem;
+  margin-bottom: 1.9rem;
+}
+#team .feature img {
+  height: 100%;
+  width: 100%;
+}
+#team .feature .showcase {
+  padding: 10rem;
+}
+#team .feature h3 {
+  padding: 1rem;
+}
+#team .feature p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+#services {
+  padding: 4rem;
+  background-color: #1f3138;
+}
+#services h2 {
+  color: #89553b;
+  font-size: 2rem;
+}
+#services p {
+  color: white;
+  text-transform: uppercase;
+}
+.heading-underline {
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #89553b;
+  margin: 0 auto 2rem;
+}
+#about .jumbotron {
+  background-color: white;
+}
+#about img {
+  height: 100%;
+  width: 100%;
+}
+#about .btn {
+  border-radius: 0;
+  margin: 1rem;
+  color: black;
+  border: 1px solid black;
+  padding: 0.3rem 1rem;
+  background-color: transparent;
+  cursor: default;
+}
+#contacts .jumbotron {
+  background-color: #2a3e47;
+  margin-bottom: 0;
+  border-bottom: 1px solid #89553b;
+  border-radius: 0;
+}
+#contacts .jumbotron h2,
+#contacts .jumbotron p {
+  color: white;
+}
+#contacts .jumbotron .form-control {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(255, 243, 243, 0.6);
+  color: rgba(255, 243, 243, 0.6);
+}
+#contacts .jumbotron .btn {
+  background-color: #89553b;
+  color: white;
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+}
+footer {
+  background-color: #2a3e47;
+  color: white;
+}
+footer h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+footer p {
+  font-size: 0.8rem;
+}
+footer .info {
+  background-color: black;
+}
+footer .wrapper {
+  padding-top: 3rem;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid white;
+}
+footer li a {
+  color: white;
+}
+@media (max-width: 767px) {
+  .caption {
+    text-align: center;
+    top: 50%;
+    left: 0;
+  }
+  .caption h1 {
+    font-size: 2.7rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .feature img {
+    height: 50%;
+    width: 50%;
+  }
+  .feature .showcase {
+    padding: 10rem;
+  }
+  .feature h3 {
+    padding: 1rem;
+  }
+  .feature p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  #about {
+    text-align: center;
+  }
+  #about img {
+    height: 75%;
+    width: 75%;
+  }
+  #about .btn {
+    width: 10rem;
+  }
+  footer ul {
+    text-align: center;
+  }
+}
