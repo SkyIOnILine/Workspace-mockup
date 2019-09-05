@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400&display=swap');
 @primary-color: rgba(137, 85, 59, 1);
-@secondary-color: blue;
+@secondary-color: white;
 @background-color: rgba(42 ,62 ,71 ,1);
 // @background-color: rgba(31 ,49 ,56 ,0);
 
 body {
-    // background: @background-color;
     overflow-x: hidden;
     font-family: 'Lora';
     color: #505962;
-    background-color: white;
+    background-color: @secondary-color;
 }
 
 .offset:before {
@@ -18,8 +17,6 @@ body {
     height: 4rem;
     margin-top: -4rem;
 }
-
-// 
 
 // Navigation
 .navbar {
@@ -42,8 +39,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
-    // padding-top: .8rem;
+    color: @secondary-color;
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -61,14 +57,13 @@ body {
     top: 60%;
     left: 27%;
     z-index: inherit 1;
-    color: white;
+    color: @secondary-color;
     text-transform: uppercase;
 
     h1 {
         font-size: 3.8rem;
         letter-spacing: .3rem;
         padding-bottom: 1rem;
-        // text-shadow: .1rem .1rem .8rem black;
     }
 
     h3 { 
@@ -83,7 +78,7 @@ body {
         margin-bottom: 0;
         padding: 2rem 0 3.5rem;
         border-radius: 0;
-        background-color: white;
+        background-color: @secondary-color;
     }
     
     h2.heading {
@@ -128,7 +123,7 @@ body {
     }
 
     p {
-        color: white;
+        color: @secondary-color;
         text-transform: uppercase;
     }
 }
@@ -142,9 +137,8 @@ body {
 
 // About section
 #about {
-
     .jumbotron {
-        background-color: white;
+        background-color: @secondary-color;
     }
     
     img {
@@ -172,7 +166,7 @@ body {
         border-radius: 0;
 
         h2, p {
-            color: white;
+            color: @secondary-color;
         }
 
         .form-control {
@@ -185,7 +179,7 @@ body {
 
         .btn {
             background-color: @primary-color;
-            color: white;
+            color: @secondary-color;
             border-width: medium;
             border-radius: 0;
             padding: .6rem 1.3rem;
@@ -197,7 +191,7 @@ body {
 // Footer
 footer {
     background-color: @background-color;
-    color: white;
+    color: @secondary-color;
 
     h4 {
         text-transform: uppercase;
@@ -223,17 +217,18 @@ footer {
     li {
         display: inline-block;
         padding: .5rem;
-        border: 1px solid white;
+        border: 1px solid @secondary-color;
 
 
         a {
-            color: white;
+            color: @secondary-color;
         }
     }
 }
 
 // Media queries
 @media (max-width: 767px) {
+    // Landing page
     .caption {
         text-align: center;
         top: 50%;
@@ -251,6 +246,7 @@ footer {
         }
     }
 
+    // Our team section
     .feature {
         img {
             height: 50%;
@@ -271,6 +267,7 @@ footer {
         }
     }
 
+    // About section
     #about {
         text-align: center;
         
@@ -284,6 +281,7 @@ footer {
         }
     }
 
+    // Footer
     footer {
         ul {
             text-align: center;
